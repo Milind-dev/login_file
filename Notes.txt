@@ -1,0 +1,32 @@
+Express.js
+-----------
+    1.Express.js is a web framework for Node.js. It is a fast, robust and asynchronous in nature
+    2.Our Express.js tutorial includes all topics of Express.js such as request object, response object, get method, post method, cookie management, scaffolding, file upload, template etc.
+    3.Express.js is based on the Node.js middleware module called connect which in turn uses http module.
+
+    Advantages
+        1.Allows you to define an error handling middleware.
+        2.Allows you to define routes of your application based on HTTP methods and URLs.
+        3.Easy to integrate with different template engines like Jade, Vash, EJS etc
+        4.create REST API server.
+        5.Easy to serve static files and resources of your application.
+        6.allows to dynamically render HTML Pages based on passing arguments to templates.
+
+Express Web Pages
+------------------
+render pages different http request by config routes
+
+var express = require('express');
+var app = express();
+// define routes here..
+var server = app.listen(5000, function () {
+    console.log('Node server is running..');
+});
+In the above 
+
+
+bodyparser (Middleware module)
+-------------------------------
+## bodyParser
+# to handle post http request in express version or above use middleware, bodyparser  middleware use 
+
