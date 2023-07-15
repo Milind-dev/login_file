@@ -4,6 +4,13 @@ const app = express();  //app includes object which gives you routing ,http ,mid
 const bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({extended:false}))
 
+
+
+// ----------------static 
+
+app.use("/images",express.static(__dirname + '/Images'))
+
+// --------------------routes
 //configure different routes function get, post, delete
 app.get("/",(req,res)=>{
     // res.send('<html><body><h1>Hello World</h1></body></html>')
@@ -22,6 +29,7 @@ app.put("/update-data",function(){
 app.delete("/delete-data",function(){
     console.log("delet")
 })
+
 
 
 
